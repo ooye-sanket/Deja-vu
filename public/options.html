@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deja Vu</title>
+  </head>
+
+  <body>
+    <div class="options-container">
+      <div class="options-inner-container">
+        <div class="options-describe-wrapper">
+          <textarea
+            autofocus
+            id="options-describe"
+            name=""
+            placeholder="describe what you are looking for ..."
+            rows="1"
+          ></textarea>
+        </div>
+        <div class="options-tags-wrapper">
+          <input type="text" id="options-tags" placeholder="tags" />
+        </div>
+        <div id="options-created-tags-wrapper"></div>
+        <div class="options-button-wrapper">
+          <div class="search-button-wrapper">
+            <button id="search-button">Search</button>
+          </div>
+          <div class="edit-button-wrapper">
+            <button id="edit-button">Edit Bookmarks</button>
+          </div>
+          <div id="edit-message-wrapper">
+            Click on Any Bookmark to delete it
+          </div>
+        </div>
+        <hr class="first-hr" />
+        <div class="options-bookmarks">
+          <div class="grid">
+            <div class="titles">
+              <div class="hash" id="hash">#</div>
+              <div>Icon</div>
+              <div>Title</div>
+              <div>Tags</div>
+              <div>Describe</div>
+              <div>Link</div>
+            </div>
+            <hr />
+            <div id="bookmark-table-content"></div>
+          </div>
+        </div>
+        <footer class="footer">
+          <hr class="footer-first-hr" />
+          <p># 2023 Deja Vu by @sanket-kalekar</p>
+          <div class="socials-wrapper-footer">
+            <a href="https://github.com/ooye-sanket" target="_blank">
+              <img src="/icons/Github.png" alt="Github" />
+            </a>
+            <a href="https://twitter.com/ooye_sanket" target="_blank">
+              <img src="/icons/Twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://www.linkedin.com/in/sanketkalekar/" target="_blank">
+              <img src="/icons/Linkedin.png" alt="Linkedin" />
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="/options.js"></script>
+  </body>
+</html>
