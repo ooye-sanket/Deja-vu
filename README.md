@@ -14,8 +14,30 @@ Deja-Vu ensures that specific pages can be swiftly located, boosting productivit
 -   Easily add detailed descriptions to your bookmarks.
 -  Struggling to find a page? Just go to Deja-Vu, describe it vaguely, and it will find it for you!
 
-# Resources
+## Running the Project Locally
 
+1. Clone the repo and enter the project directory:
+   ```bash
+   git clone https://github.com/ooye-sanket/Deja-Vu-Installation-Files
+   cd Deja-Vu
+   ```
+1. Install the necessary dependencies:
+
+   ```bash
+   npm install
+   ```
+
+1. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+1. Add the extension to your browser. To do this, go to `chrome://extensions/`, enable developer mode (top right), and click "Load unpacked". Select the `build` directory from the dialog which appears and click "Select Folder".
+
+1. That's it! You should now be able to open the extenion's popup and use the model in your browser!
+
+# Resources
 
 - Made possible by [Xenova](https://github.com/xenova/transformers.js) and [Supabase / gte-small](https://huggingface.co/Supabase/gte-small)
 
